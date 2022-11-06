@@ -33,7 +33,7 @@
   </header>
   <footer class="post-info">
     <time class="published" datetime="{{ article.date.isoformat() }}">
-      {{ article.locale_date }}
+      <b>Published:</b> {{ article.locale_date }}
     </time>
     {% if article.modified %}
     <time class="modified" datetime="{{ article.modified.isoformat() }}">
@@ -42,9 +42,9 @@
     {% endif %}
     {% if article.tags %}
     <div class="tags">
-        Tags:
+        <b>Tags:</b>
         {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="button">{{ tag }}</a>
         {% endfor %}
     </div>
     {% endif %}
