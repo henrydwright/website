@@ -1,6 +1,6 @@
 AUTHOR = 'Henry Wright'
 SITENAME = 'Henry Wright'
-SITEURL = 'https://www.henrydwright.co.uk'
+SITEURL = 'https://henrydwright.co.uk'
 
 PATH = 'content'
 THEME = 'themes/green-metro'
