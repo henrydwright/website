@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    {% block content_intro %}
+    {% for page in pages %}
+    {% if page.indexcontent %}
+    <div class="cell">
+        {{ page.content }}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endblock %}
+</div>
+
+<div class="row">
+    <div class="cell" style="margin-bottom: -10px">
+        {% block content_title %}
+        <h2>Latest Musings</h2>
+        {% endblock %}
+    </div>
+</div>
+{% for article in articles_page.object_list %}
+        <div class="row">
+            <div class="cell">
+                <article class="hentry">
+                    <header> <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
+                    <footer class="post-info">
+                        <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                    </footer><!-- /.post-info -->
+                    <div class="entry-content" style="margin-top: 10px"> {{ article.summary }} </div><!-- /.entry-content -->
+                </article>
+                <hr/>
+            </div>
+        </div>
+{% endfor %}
+<!-- /#posts-list -->
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+<!-- /#content -->
+{% endblock content %}
