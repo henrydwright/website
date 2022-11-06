@@ -1,6 +1,6 @@
 AUTHOR = 'Henry Wright'
 SITENAME = 'Henry Wright'
-SITEURL = 'https://www.henrydwright.co.uk'
+SITEURL = 'https://website-hau8.onrender.com/'
 
 PATH = 'content'
 THEME = 'themes/green-metro'
@@ -19,4 +19,4 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
