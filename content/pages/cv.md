@@ -4,6 +4,18 @@ Title: CV
 This page details my full CV. If you want to get in touch you can do so via my [LinkedIn](https://www.linkedin.com/in/henry-d-wright/).
 
 ## Work Experience
+### Digital Consultant (The PSC) <small>Mar 2022 to Present</small>
+- Collaborated with senior digital leaders at a national level in local and national government and healthcare to conduct user research and identify shared digital challenges. This led to the kick-off of several new projects by the client organisation. 
+- Led the writing of a briefing paper for board-level leaders focused on improving efficiency, embedding a customer-focused agile culture and improving experiences for all citizens at a national scale
+- Assisted a team in writing technical and cultural change elements of a delivery plan for a regional NHS digital strategy including involving collecting information on existing schemes and proposing achievable next steps for regional and local organisations
+- Lead on writing and delivering internal digital training in prototyping, user research and security principles for the company using Microsoft Office software to design materials
+
+### Strategy and Data Lead (Cabinet Office) <small>Sep 2021 to Mar 2022</small>
+- Advised on technical, strategic and policy aspects of work to procure and kick off the Discovery phase of development of a digital product in line with GDS Service Standards
+- Lead on managing a team of contractors, with involvement in daily stand ups, weekly show and tells and coordinating internal and external stakeholder meetings for users and staff to participate in the Discovery work
+- Collaborated with external stakeholders and others in departments across HM Government to assist with the creation and implementation of a large cross-government strategy
+- Lead on the drafting of, and presenting of, resources for briefing and updating ministers, senior colleagues and external stakeholders
+
 ### Intern (2020 Delivery) <small>Jul 2019 to Aug 2019</small>
 - Worked on a project across multiple NHS organisations in London to help them explore different opportunities for further development of a project
 - Drew together data from a wide variety of sources to create compelling analysis

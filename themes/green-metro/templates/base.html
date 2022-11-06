@@ -31,11 +31,12 @@
         <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_RSS.format(slug=tag.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
 
-        <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}">
-        <meta property="og:type" content="{% block og_type %}website{% endblock %}">
-        <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}">
-        <meta property="og:image" name="image" content="{% block og_image %}{{ SITEURL }}/images/default_social_card.jpg{% endblock %}">
-        <meta property="og:description" name="description" content="{% block og_description %}My life, my work, my musings{% endblock %}">
+        <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock %}" />
+        <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
+        <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}" />
+        <meta property="og:image" name="image" content="{% block og_image %}{{ SITEURL }}/images/default_social_card.jpg{% endblock %}" />
+        <meta property="og:description" name="description" content="{% block og_description %}My life, my work, my musings{% endblock %}" />
+        <meta name="author" content="Henry Wright" />
 
         <!-- Metro 4 -->
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/metro-all.min.css">
