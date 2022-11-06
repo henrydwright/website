@@ -13,7 +13,7 @@ I'm a broad based digital specialist with a special interest in government and h
 
 I bring a unique mix of a technical background and a rock-solid knowledge and application of user centred design principles.
 
-I currently work for the lovely bunch over at [The PSC Digital](https://thepsc.co.uk/digital) where we deliver impactful digital solutions for public services. If you work in public services and want to hire us you can [contact the team here](https://thepsc.co.uk/contact/).
+I currently work for the lovely bunch over at [The PSC Digital](https://thepsc.co.uk/digital) where we deliver impactful digital solutions for public services. If you work in public services and want to hire us you can [contact the team here](https://thepsc.co.uk/contact/) - let them know I sent you!
 
 ### 👨‍🏫 Academia
 As of the 2022/23 academic year I supervise [Object Oriented Programming](https://www.cl.cam.ac.uk/teaching/2223/OOProg/), [Operating Systems](https://www.cl.cam.ac.uk/teaching/2223/OpSystems/) and [Software and Security Engineering](https://www.cl.cam.ac.uk/teaching/2223/SWSecEng/) at the University of Cambridge. If you're my supervisee and you're looking for your work - it's not here it's on Google Classroom!
