@@ -31,6 +31,12 @@
         <link href="{{ FEED_DOMAIN }}/{% if TAG_FEED_RSS_URL %}{{ TAG_FEED_RSS_URL.format(slug=tag.slug) }}{% else %}{{ TAG_FEED_RSS.format(slug=tag.slug) }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
 
+        <meta property="og:title" content="{% block og_title %}{{ SITENAME }}{% endblock og_title %}">
+        <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+        <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock %}">
+        <meta property="og:image" content="{% block og_image %}{{ SITEURL }}/images/default_social_card.png{% endblock %}">
+        <meta property="og:description" content="{% block og_description %}My life, my work, my musings{% endblock %}">
+
         <!-- Metro 4 -->
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/metro-all.min.css">
 
