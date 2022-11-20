@@ -3,6 +3,7 @@ Date: 2022-11-06 17:53
 Category: Blog
 Tags: front-end,web,python
 Description: How to let go of hand crafting your HTML and love static site generators instead
+Thumb_Image: default.jpg
 
 Nothing lasts forever - something that definitely applies to software support cycles ([RIP Windows Phone: gone but not forgotten](https://en.wikipedia.org/wiki/Windows_Phone)) and something *I had definitely* forgotten about for this long neglected website, which was running on a [solidly end of life](https://www.debian.org/releases/stretch/) Debian 9 virtual private server (VPS).
 

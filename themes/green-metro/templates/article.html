@@ -29,6 +29,9 @@
 {% block og_type %}article{% endblock %}
 {% block og_url %}{{ SITEURL }}/{{ article.url }}{% endblock %}
 {% block og_description %}{{ article.description }}{% endblock %}
+{% if article.thumb_image %}
+  {% block og_image %}{{ SITEURL }}/images/articles/{{ article.thumb_image }}{% endblock %}
+{% endif %}
 
 {% block content %}
 <div class="row">
