@@ -3,7 +3,7 @@ Date: 2022-11-21 20:52
 Category: Blog
 Tags: back-end,java,modelling,UML,business-analysis
 Description: UML arrows - explained in plain English (at last!)
-Thumb_Image: test.jpg
+Thumb_Image: uml.jpg
 
 When you teach, you reveal the world's lies. This weekend I've been dispelling the idea the words "universal" or "standard" should ever be written in the world of software - demonstrated through the medium of the arrows in [Unified Modelling Language (UML)](https://en.wikipedia.org/wiki/Class_diagram) class diagrams.
 
