@@ -5,9 +5,6 @@ Tags: linux,windows,fun
 Description: How to make xfce on Debian 12 look like Windows XP
 Thumb_Image: xp_theme.jpg
 
-[Click here to skip the recipe style intro and have the instructions.](#instructions)
-
-# WHY?
 
 So you know what it's like - your PC is beginning to slow down, things are taking longer than they need to. Plus, for a reason you can't work out, Windows 11 will only let you have 5 uninterrupted minutes of functional trackpad at a time. So, what does somebody in this position do?
 
