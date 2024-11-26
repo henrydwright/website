@@ -1,9 +1,10 @@
-Title: FHIR Blog #1 - Setting up the Azure FHIR Service
+Title: How to set up the Azure FHIR Service
 Date: 2024-07-27 18:38
 Category: Blog
 Tags: back-end,python,FHIR
 Description: How to create Azure FHIR Service and connect with a Python script
 Thumb_Image: default.jpg
+Slug: fhir-blog-1-setting-up-the-azure-fhir-service
 
 Annoyingly, the documentation on the Microsoft website for setting up and getting going with the FHIR service from scratch is not amazingly clear as the required information is spread across many pages.
 
