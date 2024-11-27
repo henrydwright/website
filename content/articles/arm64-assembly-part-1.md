@@ -32,6 +32,17 @@ Start by installing [Microsoft Visual Studio 2022](https://visualstudio.microsof
 * Latest copy of Windows SDK
 * Just-In-Time debugger
 
+## How do processors work - the real basics
+A processor is essentially a relatively tiny, incredibly complex, incredibly fast calculator attached to a huge, and relatively much slower, piece of scrap paper (RAM/memory).
+
+It works by fetching, decoding and executing one instruction after another. It will do this one by one unless it encounters an instruction which tells it to jump to another location and start executing a different part of the program.
+
+<img src="/images/articles/dragon/fetch_decode_execute.png" width="50%"/>
+
+Instructions are represented by small pieces of binary called machine code. Below is an example of an arm64 instruction to set a chosen register to a 16 bit value - each instruction is 32 bits long and these definitions give meaning to the binary.
+
+<img src="/images/articles/dragon/example_instruction.png" width="50%"/>
+
 ## A little about assembly
 Assembly is barely even a programming language. It is essentially a way of writing down individual instrutions that a CPU architecture will run without needing to manually write each bit of a machine code instruction down. Depending on the variant, it also includes a few features to help the programmer out such as:
 
@@ -62,7 +73,7 @@ This is unhelpful when writing code, so we define the instructions an abstract v
 
 You can read the whole thing if you like, but the important bits are down below:
 
-* The processor executes one instruction after another.
+* The processor executes one instruction after another (simple sequential execution).
 * The processor has 30 general purpose storage spaces (registers) it can make use of, either using the full 64-bits (`x0-x30`), or half the width at 32-bits (`w0-w30`).
 * There are certain rules for how different pieces of binary code will interact with each other - this is called the Application Binary Interface. It includes things like which registers are used to pass the parameters of functions, and in what way (the procedure call standard - more on this later).
 
