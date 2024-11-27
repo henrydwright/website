@@ -3,7 +3,7 @@ Date: 2024-11-25 21:00:00
 Category: Blog
 Tags: assembly,windows,C,fun
 Description: Learn arm64 assembly on Windows in three hard steps (part 1 of 3)
-Thumb_Image: dragon.png
+Thumb_Image: dragon.jpg
 Slug: arm64-assembly-part-1
 
 So I recently [got a new laptop](https://www.microsoft.com/en-gb/surface/devices/surface-laptop-7th-edition) and unlike most Windows PCs of the past *forever*, it uses an ARM chip *and* gets pretty amazing performance. So like all the best developers, I set out to squeeze all the performance I could out of it and write <s>an A-list game</s> "Hello World" fully in Assembly.
