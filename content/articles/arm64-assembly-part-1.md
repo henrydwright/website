@@ -43,6 +43,8 @@ Instructions are represented by small pieces of binary called machine code. Belo
 
 <img src="/images/articles/dragon/example_instruction.png" width="50%"/>
 
+_This image taken from Arm (R) Architecture Reference Manual - Armv8, for Armv8-A architecture profile. It is (C) 2013-2020 Arm Limited or its affiliates_
+
 ## A little about assembly
 Assembly is barely even a programming language. It is essentially a way of writing down individual instrutions that a CPU architecture will run without needing to manually write each bit of a machine code instruction down. Depending on the variant, it also includes a few features to help the programmer out such as:
 
