@@ -50,7 +50,7 @@ Assembly is barely even a programming language. It is essentially a way of writi
 
 * labels - to help refer to certain things without writing address offsets, and can be exported so the linker can make use of them
 * pseudoinstructions - that look like a single instruction but actually compile to several
-* directives - which tell the assembler to do something for us (such as reserve some memory space, or set a constant to use in our code) but never make it into the final code
+* directives - which tell the assembler to do something for us at _assembly_ time (such as reserve some memory space in the compiled program, or define, and replace, named constants in our code with values)
 
 To run our code we still need to compile it into machine code that the computer can run, and ensure it's encapsulated in an executable file our OS can start. On Windows this looks like follows:
 
@@ -76,7 +76,7 @@ This is unhelpful when writing code, so we define the instructions an abstract v
 You can read the whole thing if you like, but the important bits are down below:
 
 * The processor executes one instruction after another (simple sequential execution).
-* The processor has 30 general purpose storage spaces (registers) it can make use of, either using the full 64-bits (`x0-x30`), or half the width at 32-bits (`w0-w30`).
+* The processor has 31 general purpose storage spaces (registers) it can make use of, either using the full 64-bits (`x0-x30`), or half the width at 32-bits (`w0-w30`).
 * There are certain rules for how different pieces of binary code will interact with each other - this is called the Application Binary Interface. It includes things like which registers are used to pass the parameters of functions, and in what way (the procedure call standard - more on this later).
 
 ## Creating a correctly configured project
@@ -125,7 +125,7 @@ If we want to make the label available outside of this code file, we need to mar
 ### Procedure Call Standard (AAPCS)
 Our ideal processor has no idea what a function is - it only knows registers and instructions. Indeed, functions are an abstract concept used to make programming easier by allowing us to divide up our programs into smaller chunks with defined behaviour - we send parameters into the code, some work gets done, and the result comes out the other end.
 
-As a result, we need a way of defining how functions will work including how to call a function. This part is called the [Procedure Call Standard](https://developer.arm.com/documentation/102374/0102/Procedure-Call-Standard). Windows follows this for the most part but a useful summary of all parts and any differences in Windows is documented at: [Overview of ARM64 ABI conventions](https://learn.microsoft.com/en-us/cpp/build/arm64-windows-abi-conventions?view=msvc-170).
+As a result, we need a way of defining how functions will work including how to call a function. This part is called the [Procedure Call Standard (the link takes you to the arm64 version)](https://developer.arm.com/documentation/102374/0102/Procedure-Call-Standard). Windows follows the Arm defaults for the most part, but a useful summary of all parts and any differences in Windows is documented at: [Overview of ARM64 ABI conventions](https://learn.microsoft.com/en-us/cpp/build/arm64-windows-abi-conventions?view=msvc-170).
 
 We'll learn more as we go, but for now we need to know:
 
@@ -137,7 +137,7 @@ The code we've written is essentially the same (in psuedocode) as `function test
 ### add & ret
 The `add x0, x0, x1` instruction performs the following calculation: `x0 = x0 + x1`. 
 
-`ret` is a bit more complicated. When the function code was branched to (using the `bl` instruction), the ARM64 ABI defines that the location to return to is stored in the link register `lr`. `ret` is essentially shorthand for branching back to the location stored in `lr`.
+`ret` is a bit more complicated. When the function code was branched to (using the `bl` instruction which the C code below will generate as part of the `testfunc(a,b)` part), the ARM64 ABI defines that the location to return to is stored in the link register `lr`. `ret` is essentially shorthand for branching back to the location stored in `lr`.
 
 #### Relevant sections of armasm user guide
 
@@ -179,6 +179,9 @@ When `testfunc` is called what is happening?
 ## Things to try
 * Change your code to write a function that takes three arguments and adds them all together before returning the answer
 * Try some of the other instructions from the Arm Compiler reference guide.
+
+## What next?
+In part 2 of 3, we will create some assembly code that runs on its own without any C code to start it off and is able to print "Hello, world!" using the standard C function `printf`, called from assembly.
 
 ## Also Read
 * [ARM Compiler (armasm) user guide](https://developer.arm.com/documentation/dui0801/l)
