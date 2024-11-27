@@ -37,7 +37,7 @@ A processor is essentially a relatively tiny, incredibly complex, incredibly fas
 
 It works by fetching, decoding and executing one instruction after another. It will do this one by one unless it encounters an instruction which tells it to jump to another location and start executing a different part of the program.
 
-<img src="/images/articles/dragon/fetch_decode_execute.png" width="50%"/>
+<img src="/images/articles/dragon/fetch_decode_cycle.png" width="50%"/>
 
 Instructions are represented by small pieces of binary called machine code. Below is an example of an arm64 instruction to set a chosen register to a 16 bit value - each instruction is 32 bits long and these definitions give meaning to the binary.
 
