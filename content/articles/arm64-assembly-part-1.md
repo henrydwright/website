@@ -183,6 +183,8 @@ When `testfunc` is called what is happening?
 ## What next?
 In part 2 of 3, we will create some assembly code that runs on its own without any C code to start it off and is able to print "Hello, world!" using the standard C function `printf`, called from assembly.
 
+[Click this link to go to part 2 of 3](./arm64-assembly-part-2.html).
+
 ## Also Read
 * [ARM Compiler (armasm) user guide](https://developer.arm.com/documentation/dui0801/l)
 * [Arm Compiler (armasm) reference guide](https://developer.arm.com/documentation/dui0802/b)
