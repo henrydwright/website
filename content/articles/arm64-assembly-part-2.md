@@ -43,7 +43,7 @@ Here we make our first use of the Windows API, with the [ExitProcess](https://le
 2. Lookup what arguments it needs, by inspecting the documentation and adhering to these.
 3. Call the function in code, by adhering to the ARM Architecture Procedure Call Standard (placing arguments into registers in order, then calling with `bl`).
 
-Compile the program above and test that it works. All it does is open and immediately exit.
+<div class="remark success"><b>Time to run!</b> Compile the program above and test that it works. All it does is open and immediately exit.</div>
 
 #### Relevant sections of armasm user guide / Microsoft documentation
 
@@ -92,6 +92,8 @@ mainCRTStartup PROC
 We create a new `AREA` for data and store a set of bytes (the `B` in `DCB` stands for bytes). The contents of these bytes are the null-terminated (hence the `0`) ASCII string for _"Hello, world!"_.
 
 Note how easy the assembler makes it for us to define a string constant.
+
+<div class="remark success"><b>Time to run!</b> Check this program works by running it. You'll notice it does nothing but run and exit again. This is by design, we'll make it do stuff later. </div>
 
 ### Stack
 We'll now see why string constants are much easier to define globally in `armasm` - this is because the work is done at assembly time, rather than at runtime, and because the syntax for doing so is much easier!
@@ -208,7 +210,7 @@ Memory state at <code>sp</code>
 
 
 
-Try compiling and running both - you'll notice that neither do anything other than run and exit because all they're doing is setting up the data to be used!
+<div class="remark success"><b>Time to run!</b> Try compiling and running this example - you'll notice that it also doesn't do anything other than run and exit!</div>
 
 #### Relevant sections of armasm user guide
 * [DCB](https://developer.arm.com/documentation/dui0801/l/Directives-Reference/DCB)
@@ -260,7 +262,9 @@ main PROC
 
 If we try and assemble this without changing any settings in Visual Studio this will fail with error `LNK2019 unresolved external symbol printf referenced in function main` (because the linker has no idea what `printf` means) and `LNK2001 unresolved external symbol mainCRTStartup` (because the linker can't find the `mainCRTStartup` entry point it's looking for). We need to tell the linker to add the C Runtime Library (with associated startup code) to our final executable, and include the printf defintion.
 
-To do this we right click on the project, click Properties -> Linker -> Input. Edit additional dependencies to add `"legacy_stdio_definitions.lib; libcmt.lib"`. The program should compile and run!
+To do this we right click on the project, click Properties -> Linker -> Input. Edit additional dependencies to add `"legacy_stdio_definitions.lib; libcmt.lib"`. 
+
+<div class="remark success"><b>Time to run!</b> With these settings changed, the program should compile and run successfully</div>
 
 #### Relevant sections of armasm user guide / Microsoft documentation
 * [IMPORT](https://developer.arm.com/documentation/dui0801/l/Directives-Reference/IMPORT-and-EXTERN)

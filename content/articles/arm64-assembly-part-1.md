@@ -167,7 +167,7 @@ int main() {
 ```
 Here `extern` tells the compiler that testfunc is defined somewhere externally and tells the linker that this needs resolving when linking objects. It can then be used in the rest of the C code.
 
-Set you architecture to ARM64 in the dropdown if needed and then click on the run icon next to "Local Windows Debugger". Your code should execute successfully!
+<div class="remark success"><b>Time to run!</b> Set your architecture to ARM64 in the dropdown if needed and then click on the run icon next to "Local Windows Debugger". Your code should execute successfully!</div>
 
 When `testfunc` is called what is happening?
 
