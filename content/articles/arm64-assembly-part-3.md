@@ -96,6 +96,8 @@ Windows has a pretty long history so the notion of a filesystem has changed seve
 
 If you are interested in reading more, this [guide by Chris Denton is excellent](https://chrisdenton.github.io/omnipath/Overview.html) when read alongside the [official Windows documentation](https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file#win32-file-namespaces).
 
+The below example shows the other way of writing "Hello, world!" using the other bits.
+
 ```Assembly
 ; Hello World in ARM64 Assembly for Windows
 
@@ -141,7 +143,11 @@ mainCRTStartup PROC
 
 	END
 ```
-Relevant sections of Windows API documentation:
+
+<div class="remark success"><b>Time to run!</b> This program should run and print <i>Hello, world!</i> to the screen.</div>
+
+#### Relevant sections of Windows API documentation:
+
 * [CreateFileA](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea)
 * [WriteFile](https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile)
 
@@ -344,6 +350,10 @@ mainCRTStartup PROC
 
 	END
 ```
+
+## What next?
+
+That's the end of our series of 3 tutorials - hope you enjoyed it and if you liked it do [buy me a coffee at the link here](https://monzo.me/henrywright60/5.00?d=ArmBlog&h=jui6N4).
 
 ## Also read
 * [ARM A-profile A64 Instruction Set Architecture](https://developer.arm.com/documentation/ddi0602/2024-09)
