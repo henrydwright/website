@@ -214,7 +214,9 @@ Memory state at <code>sp</code>
 
 #### Relevant sections of armasm user guide
 * [DCB](https://developer.arm.com/documentation/dui0801/l/Directives-Reference/DCB)
+* [sub](https://developer.arm.com/documentation/dui0801/l/A64-General-Instructions/SUB--immediate---A64-)
 * [movk](https://developer.arm.com/documentation/dui0801/l/A64-General-Instructions/MOVK--A64-)
+* [stp](https://developer.arm.com/documentation/dui0801/l/A64-Data-Transfer-Instructions/STP--A64-)
 
 ## Using a C standard library function
 
