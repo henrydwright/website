@@ -206,7 +206,7 @@ We're doing this to prove we can do it, not that it's a good idea. As a result, 
 
 These all correspond to function calls we could make using the functions in the header files. 
 
-Putting all of this and our knowledge from the first 2 tutorials together, we get our magnum opus - a "Hello, world" program that makes use of ARM64 assembly, and Windows NT system calls alone without a single library in sight...
+Putting all of this and our knowledge from the first 2 tutorials together, we get our magnum opus - a "Hello, world" program that makes use of ARM64 assembly, and Windows NT system calls alone without a single library in sight... You can also [download the code here](/images/articles/dragon/hello.asm).
 
 ```Assembly
 ; Hello World in ARM64 Assembly for Windows
@@ -344,3 +344,15 @@ mainCRTStartup PROC
 
 	END
 ```
+
+## Also read
+* [ARM A-profile A64 Instruction Set Architecture](https://developer.arm.com/documentation/ddi0602/2024-09)
+* [ARMv8-A Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/fc/)
+* [WinMain application entry point for Windows](https://learn.microsoft.com/en-us/windows/win32/learnwin32/winmain--the-application-entry-point)
+* [Microsoft Universal C Runtime Function Reference](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/crt-alphabetical-function-reference?view=msvc-170)
+* [Microsoft Linker Reference](https://learn.microsoft.com/en-us/cpp/build/reference/linker-options?view=msvc-170)
+* [Microsoft C Runtime .lib files](https://learn.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features?view=msvc-170)
+* [Windows ARM64 ABI Conventions](https://learn.microsoft.com/en-us/cpp/build/arm64-windows-abi-conventions?view=msvc-170)
+* [Windows Data Types](https://learn.microsoft.com/en-us/windows/win32/winprog/windows-data-types)
+* [NTSTATUS Codes](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55)
+* [NtDoc - documentation for NT calls](https://ntdoc.m417z.com/)

@@ -283,3 +283,5 @@ To do this we right click on the project, click Properties -> Linker -> Input. E
 ## What next?
 
 In part 3 of 3, we'll go further and explore how to print "Hello, world!" to the screen using only Windows NT (kernel) system calls.
+
+[Click here to go to part 3 of 3](./arm64-assembly-part-3.html).
