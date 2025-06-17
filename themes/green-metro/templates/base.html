@@ -44,7 +44,7 @@
         <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/images/icons/favicon.ico">
 
         <!-- Metro 4 -->
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/metro-all.min.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/metro.css">
 
         <!-- Settings -->
         <meta name="metro4:init" content="true">
@@ -54,7 +54,7 @@
 </head>
 
 <body id="index" class="home">
-        <header data-role="appbar" data-expand-point="md" id="banner" class="body bg-green fg-white" style="height: 100px">
+        <div data-role="appbar" data-expand-point="md" id="banner" class="body bg-green fg-white" style="height: 100px">
                 <a href="{{ SITEURL }}/" class="brand no-hover">
                   <div style="font-size: 48px">{{ SITENAME }}</div>
                   
@@ -78,7 +78,7 @@
                     {% endfor %}
                   {% endif %}
                   </ul><!-- /#menu -->
-        </header><!-- /#banner -->
+                </div><!-- /#banner -->
 
       <div class="container-fluid" style="padding-top: 100px; padding-left: 16px; padding-right: 16px;">
         <div class="grid" style="margin-top: 0px">
@@ -86,7 +86,7 @@
           {% endblock %} 
 
           <!-- Metro 4 -->
-          <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+          <script src="{{ SITEURL }}/theme/js/metro.js"></script>
 
           <hr/>
           <footer id="contentinfo" class="body">
